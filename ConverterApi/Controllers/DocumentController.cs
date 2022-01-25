@@ -53,7 +53,7 @@ namespace ConverterApi.Controllers
             {
                 try
                 {
-                    input = sr.ReadToEnd();
+                    input = await sr.ReadToEndAsync();
                 }
                 catch (Exception ex)
                 {
